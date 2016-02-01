@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
         var rotation = CGAffineTransformMakeRotation(xFromCenter / 100)
 
-        var scale = min( 100 / abs(xFromCenter), 1)
+        let scale = min( 100 / abs(xFromCenter), 1)
         
         var stretch = CGAffineTransformScale(rotation, scale, 0.9)
         
